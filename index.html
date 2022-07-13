@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveyform.css"/>
+</head>
+<body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+  <form id="survey-form">
+    <fieldset>
+        <label id="name-label">Name: <input type="text" required name="first name" id="name" placeholder="Enter your name"></input> </label>
+        <label id="email-label">Email: <input type="email" required name="last name" id="email" placeholder="Enter your email"></input></label>
+        <label id="number-label">Age:(optional) <input type="number" name="number" id="number" min="10" max="120" placeholder="Age"></input></label>
+        
+    </fieldset>
+    <fieldset>
+        <label>Which option best describes your current role?
+            <select name="referrer" id="dropdown">
+                <option value="">Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full-time job</option>
+                <option value="3">Prefer not to say</option>
+                <option value="4">Other</option>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>Would you recommend our platform to others?
+            <label><input type="radio" name="Recommend" class="inline" value="definitely"> Definitely</input></label>
+            <label><input type="radio" name="Recommend" class="inline" value="Maybe"> Maybe</input></label>
+            <label><input type="radio" name="Recommend" class="inline" value="Not sure"> Not sure</input></label>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>What your favourite feature of your platform:
+            <select name="favourite" id="dropdown">
+                <option value="">Select an option</option>
+                <option value="1">Projects</option>
+                <option value="2">Job portal</option>
+                <option value="3">open source</option>
+                <option value="4">Other</option>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label> Help us improve:
+            <label><input type="checkbox" name="improve" class="inline" value="improve">Front end projects</input></label>
+            <label><input type="checkbox" name="improve" class="inline" value="improve">back end projects</input></label>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>Any comments or suggestions:
+
+            <textarea rows="3" cols="30" placeholder="Enter your comments here" name="comments"></textarea>
+
+        </label> 
+
+    </fieldset>
+   
+    <input type="submit" value="Submit" id="submit"></input>
+    </form>
+</body>
+</html>
